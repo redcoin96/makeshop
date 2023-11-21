@@ -1,0 +1,112 @@
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  margin: -1px;
+}
+
+.pc {
+  @include tablet-s {
+    display: none;
+  }
+}
+
+.mo {
+  display: none;
+
+  @include mobile-s {
+    display: block;
+  }
+}
+
+.inner {
+  margin: 0 12rem auto;
+
+  @include desktop-l {
+    margin: 0 10rem auto;
+  }
+  @include desktop-m {
+    margin: 0 10rem auto;
+  }
+  @include desktop-s {
+    margin: 0 5rem auto;
+  }
+  @include tablet-l {
+    height: 100%;
+  }
+  @include mobile-s {
+    padding: 0 15px;
+    margin: 0;
+  }
+}
+
+.section {
+  padding-top: 13rem;
+
+  @include tablet-l {
+    padding-top: 10rem;
+  }
+
+  @include mobile-s {
+    padding-top: 7.3rem;
+  }
+}
+
+.full-bg {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  background: #f4f6f8;
+  top: 0;
+  z-index: -1;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h2.tit {
+  font-size: 5.6rem;
+  font-weight: bold;
+  letter-spacing: -0.28rem;
+  text-align: center;
+  color: #000;
+  margin-bottom: 0.8rem;
+
+  @include desktop-l {
+    font-size: 5rem;
+  }
+
+  @include mobile-l {
+    font-size: 4rem;
+  }
+
+  @include mobile-s {
+    font-size: 3rem;
+    margin-bottom: 0;
+    letter-spacing: -2px;
+    line-height: 1.23;
+  }
+}
+
+.sub-tit {
+  font-size: 2rem;
+  font-weight: normal;
+  letter-spacing: -0.1rem;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 5.5rem;
+
+  @include desktop-l {
+    font-size: 1.8rem;
+  }
+
+  @include mobile-l {
+    font-size: 1.6rem;
+  }
+
+  @include mobile-s {
+    font-size: 1.3rem;
+    opacity: 0.7;
+  }
+}

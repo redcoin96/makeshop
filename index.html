@@ -1,0 +1,1829 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="./assets/js/main.js" defer></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="inner">
+        <div class="partner-group">
+          <ul>
+            <li>
+              <a href="">다나와</a>
+            </li>
+            <li>
+              <a href="">에누리</a>
+            </li>
+            <li>
+              <a href="">몰테일</a>
+            </li>
+            <li>
+              <a href="">플레이오토</a>
+            </li>
+          </ul>
+        </div>
+        <nav class="gnb-group">
+          <h1>
+            <a href="">
+              <img
+                src="	https://www.makeshop.co.kr/newmakeshop/home/img/main/logo.png"
+                alt="메이크샵 로고"
+              />
+            </a>
+          </h1>
+          <nav class="menu-group-pc">
+            <ul class="menu-list">
+              <li>
+                <a href="">알아보기</a>
+              </li>
+              <li>
+                <a href="">준비하기</a>
+              </li>
+              <li>
+                <a href="">판매하기</a>
+              </li>
+              <li>
+                <a href="">운영하기</a>
+              </li>
+              <li class="promo">
+                <a href="">홍보하기</a>
+              </li>
+              <li class="shop">
+                <a href="">메이크샵스토어</a>
+              </li>
+              <li>
+                <a href="">고객센터</a>
+              </li>
+            </ul>
+            <ul class="sub-menu-group">
+              <li class="depth1">
+                <a href="">알아보기</a>
+                <ul class="depth2">
+                  <li class="sub-menu">
+                    <a href="">내게 맞는 서비스</a>
+                    <ul>
+                      <li><a href="">1인/소규모</a></li>
+                      <li>
+                        <a href="">신규 쇼핑몰 제작</a>
+                      </li>
+                      <li><a href="">브랜드/기업</a></li>
+                      <li>
+                        <a href="">기업 맞춤 제작</a>
+                      </li>
+                      <li><a href="">쇼핑몰 이전</a></li>
+                      <li>
+                        <a href="">글로벌 쇼핑몰 제작</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu">
+                    <a href="">구독안내</a>
+                  </li>
+                  <li class="sub-menu">
+                    <a href="">업종별 추천기능</a>
+                    <ul>
+                      <li><a href="">패션잡화</a></li>
+                      <li>
+                        <a href="">언더웨어/애슬레저</a>
+                      </li>
+                      <li><a href="">식품</a></li>
+                      <li><a href="">뷰티</a></li>
+                      <li><a href="">리빙</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="depth1">
+                <a href="">준비하기</a>
+                <ul class="depth2">
+                  <li class="sub-menu">
+                    <a href="">준비과정</a>
+                  </li>
+                  <li class="sub-menu">
+                    <a href="">쇼핑몰 창업 준비</a>
+                  </li>
+                  <li class="sub-menu">
+                    <a href="">쇼핑몰 디자인</a>
+                  </li>
+                  <li class="sub-menu">
+                    <a href="">결제서비스</a>
+                  </li>
+                  <li class="sub-menu">
+                    <a href="">배송관리</a>
+                    <ul>
+                      <li><a href="">배송관리</a></li>
+                      <li>
+                        <a href="">정기배송/구독</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="sub_menu">
+                    <a href="">상품 등록/진열</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="depth1">
+                <a href="">판매하기</a>
+                <ul class="depth2">
+                  <li class="sub-menu">
+                    <a href="">상품판매</a>
+                  </li>
+                  <li class="sub-menu">
+                    <a href="">자사몰 판매 강화</a>
+                  </li>
+                  <li class="sub-menu">
+                    <a href="">판매 채널 확장</a>
+                    <ul>
+                      <li>
+                        <a href="">외부채널 판매</a>
+                      </li>
+                      <!--li><a href="./order_global.html">해외판매</a></li-->
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="depth1">
+                <a href="">운영하기</a>
+                <ul class="depth2">
+                  <li class="sub-menu">
+                    <a href="">쇼핑몰 운영</a>
+                  </li>
+                  <li class="sub-menu">
+                    <a href="">주문관리</a>
+                  </li>
+                  <li class="sub-menu">
+                    <a href="">회원관리</a>
+                  </li>
+                  <li class="sub-menu">
+                    <a href="">보안</a>
+                  </li>
+                  <li class="sub-menu">
+                    <a href="">통계분석</a>
+                  </li>
+                  <li class="sub-menu">
+                    <a href="">이벤트/프로모션</a>
+                    <ul>
+                      <li><a href="">이벤트</a></li>
+                      <li>
+                        <a href="">할인 기능</a>
+                      </li>
+                      <li>
+                        <a href="">이벤트 대용량 트래픽 처리</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu">
+                    <a href="">상품리뷰</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="depth1 promo">
+                <a href="">홍보하기</a>
+                <ul class="depth2">
+                  <li class="sub-menu">
+                    <a href="">쇼핑몰 마케팅</a>
+                  </li>
+                  <li class="sub-menu">
+                    <a href="">광고센터</a>
+                  </li>
+                  <li class="sub-menu">
+                    <a href="">컨설팅</a>
+                    <ul>
+                      <li><a href="">맞춤컨설팅</a></li>
+                      <li><a href="">광고컨설팅</a></li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu">
+                    <a href="">검색 엔진 최적화(SEO)</a>
+                  </li>
+                  <li class="sub-menu">
+                    <a href="">언론 홍보 지원</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="depth1 store">
+                <a href="">메이크샵스토어</a>
+              </li>
+              <li class="depth1">
+                <a href="">고객센터</a>
+                <ul class="depth2">
+                  <li class="sub-menu">
+                    <a href="">고객센터</a>
+                    <ul>
+                      <li><a href="">자주 묻는 질문</a></li>
+                      <li><a href="">매뉴얼</a></li>
+                      <li><a href="">Real Q&amp;A</a></li>
+                      <li><a href="">개별디자인 TIP</a></li>
+                      <li>
+                        <a href="">1:1 문의</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu">
+                    <a href="">알림게시판</a>
+                    <ul>
+                      <li>
+                        <a href="">공지사항</a>
+                      </li>
+                      <li>
+                        <a href="">이벤트</a>
+                      </li>
+                      <li>
+                        <a href="">업그레이드 노트</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu">
+                    <a href="">제휴문의</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div class="search-group">
+            <a href="" class="login-btn">로그인/회원가입</a>
+            <button type="button" class="search-btn">
+              <img
+                src="https://www.makeshop.co.kr/newmakeshop/home/img/common/icon_search.png"
+                alt="찾기버튼"
+              />
+            </button>
+          </div>
+          <div class="btn-group">
+            <button type="button" class="search-btn"></button>
+            <button type="button" class="more-btn">
+              <span></span>
+            </button>
+          </div>
+          <div class="menu-group-mo">
+            <div class="login-btn">
+              <a href="">로그인/회원가입</a>
+            </div>
+            <nav class="gnb-area">
+              <ul class="gnb-list">
+                <li class="depth1">
+                  <a href="">알아보기</a>
+                  <ul class="depth2">
+                    <li class="sub-menu">
+                      <a href="">준비과정</a>
+                    </li>
+                    <li class="sub-menu">
+                      <a href="">쇼핑몰 창업 준비</a>
+                    </li>
+                    <li class="sub-menu">
+                      <a href="">쇼핑몰 디자인</a>
+                    </li>
+                    <li class="sub-menu">
+                      <a href="">결제서비스</a>
+                    </li>
+                    <li class="sub-menu">
+                      <a href="">배송관리</a>
+                      <ul>
+                        <li><a href="">배송관리</a></li>
+                        <li>
+                          <a href="">정기배송/구독</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sub-menu">
+                      <a href="">상품 등록/진열</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="depth1">
+                  <a href="">준비하기</a>
+                  <ul class="depth2">
+                    <li class="sub-menu">
+                      <a href="">준비과정</a>
+                    </li>
+                    <li class="sub-menu">
+                      <a href="">쇼핑몰 창업 준비</a>
+                    </li>
+                    <li class="sub-menu">
+                      <a href="">쇼핑몰 디자인</a>
+                    </li>
+                    <li class="sub-menu">
+                      <a href="">결제서비스</a>
+                    </li>
+                    <li class="sub-menu">
+                      <a href="">배송관리</a>
+                      <ul>
+                        <li><a href="">배송관리</a></li>
+                        <li>
+                          <a href="">정기배송/구독</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sub-menu">
+                      <a href="">상품 등록/진열</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="depth1">
+                  <a href="">운영하기</a>
+                  <ul class="depth2">
+                    <li class="sub-menu">
+                      <a href="">상품판매</a>
+                    </li>
+                    <li class="sub-menu">
+                      <a href="">자사몰 판매 강화</a>
+                    </li>
+                    <li class="sub-menu">
+                      <a href="">판매 채널 확장</a>
+                      <ul>
+                        <li>
+                          <a href="">외부채널 판매</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="depth1 promo">
+                  <a href="">판매하기</a>
+                  <ul class="depth2">
+                    <li class="sub-menu">
+                      <a href="">상품판매</a>
+                    </li>
+                    <li class="sub-menu">
+                      <a href="">자사몰 판매 강화</a>
+                    </li>
+                    <li class="sub-menu">
+                      <a href="">판매 채널 확장</a>
+                      <ul>
+                        <li>
+                          <a href="">외부채널 판매</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="depth1 store">
+                  <a href="">메이크업샵 스토어</a>
+                  <ul class="depth2">
+                    <li class="sub-menu">
+                      <a href="">쇼핑몰 마케팅</a>
+                    </li>
+                    <li class="sub-menu">
+                      <a href="">광고센터</a>
+                    </li>
+                    <li class="sub-menu">
+                      <a href="">컨설팅</a>
+                      <ul>
+                        <li><a href="">맞춤컨설팅</a></li>
+                        <li><a href="">광고컨설팅</a></li>
+                      </ul>
+                    </li>
+                    <li class="sub-menu">
+                      <a href="">검색 엔진 최적화(SEO)</a>
+                    </li>
+                    <li class="sub-menu">
+                      <a href="">언론 홍보 지원</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="depth1">
+                  <a href="">홍보하기</a>
+                  <ul class="depth2">
+                    <li class="sub-menu">
+                      <a href="">쇼핑몰 마케팅</a>
+                    </li>
+                    <li class="sub-menu">
+                      <a href="">광고센터</a>
+                    </li>
+                    <li class="sub-menu">
+                      <a href="">컨설팅</a>
+                      <ul>
+                        <li><a href="">맞춤컨설팅</a></li>
+                        <li><a href="">광고컨설팅</a></li>
+                      </ul>
+                    </li>
+                    <li class="sub-menu">
+                      <a href="">검색 엔진 최적화(SEO)</a>
+                    </li>
+                    <li class="sub-menu">
+                      <a href="">언론 홍보 지원</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="depth1">
+                  <a href="">고객센터</a>
+                  <ul class="depth2">
+                    <li class="sub-menu">
+                      <a href="">고객센터</a>
+                      <ul>
+                        <li><a href="">자주 묻는 질문</a></li>
+                        <li>
+                          <a href="">관리자 매뉴얼</a>
+                        </li>
+                        <li><a href="">동영상 매뉴얼</a></li>
+                        <li>
+                          <a href="">Real Q&amp;A</a>
+                        </li>
+                        <li>
+                          <a href="">개별디자인 TIP</a>
+                        </li>
+                        <li>
+                          <a href="">1:1 문의</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sub-menu">
+                      <a href="">알림게시판</a>
+                      <ul>
+                        <li>
+                          <a href="">공지사항</a>
+                        </li>
+                        <li>
+                          <a href="">이벤트</a>
+                        </li>
+                        <li>
+                          <a href="">업그레이드 노트</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sub-menu">
+                      <a href="">제휴문의</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="sc-visual section">
+        <div class="inner">
+          <div class="txt-group">
+            <h2>
+              나만의 <br class="mo" /><span class="col-txt on">MAKE MATE,</span
+              ><br class="pc" />
+              메이크샵
+            </h2>
+            <p>쇼핑몰 준비부터 판매, 홍보까지 모든 것을 함께 합니다.</p>
+            <a href="">START NOW</a>
+          </div>
+          <div class="visual-group">
+            <div class="mobile-img">
+              <img
+                src="https://www.makeshop.co.kr/newmakeshop/home/img/main/main_visual_mobile.png"
+                alt="이미지"
+              />
+            </div>
+            <div class="mobile-shadow">
+              <img
+                src="https://www.makeshop.co.kr/newmakeshop/home/img/main/main_visual_mobile_shadow.png"
+                alt="이미지"
+              />
+            </div>
+            <div class="mobile-screen-rolling">
+              <ul class="rollingSlideBox on">
+                <li class="rollingSlide rolling2">
+                  <img
+                    src="https://www.makeshop.co.kr/newmakeshop/home/img/main/main_visual_mobile_rolling_img02.jpg"
+                    alt="이미지"
+                  />
+                </li>
+                <li class="rollingSlide rolling1">
+                  <img
+                    src="https://www.makeshop.co.kr/newmakeshop/home/img/main/main_visual_mobile_rolling_img01.jpg"
+                    alt="이미지"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <ul class="circle-group on">
+            <li class="circle n1"></li>
+            <li class="circle n2"></li>
+            <li class="circle n3"></li>
+            <li class="circle n4"></li>
+          </ul>
+        </div>
+      </section>
+      <section class="sc-service section">
+        <h2 class="tit">
+          내게 맞는 서비스
+          <p class="sub-tit">
+            메이크샵이 제공하는 맞춤 서비스를 한 눈에 확인해보세요.
+          </p>
+        </h2>
+        <div class="inner">
+          <div class="swiper">
+            <ul class="swiper-wrapper service-list">
+              <li class="swiper-slide service-item n1">
+                <a href="">
+                  <span class="img-b">
+                    <img
+                      src="https://www.makeshop.co.kr/newmakeshop/home/img/main/sec02_icon0.png"
+                      alt="콘텐츠사진"
+                    />
+                  </span>
+                  <span class="txt-area">
+                    <strong>1인/소규모</strong>
+                    <span>
+                      쇼핑몰 창업을 시작하려고 한다면<br />
+                      무료로 쇼핑몰을 이용해보세요.<br />
+                    </span>
+                  </span>
+                </a>
+              </li>
+              <li class="swiper-slide service-item n2">
+                <a href="">
+                  <span class="img-b">
+                    <img
+                      src="https://www.makeshop.co.kr/newmakeshop/home/img/main/sec02_icon1.png"
+                      alt="콘텐츠사진"
+                    />
+                  </span>
+                  <span class="txt-area">
+                    <strong>쇼핑몰 제작 의뢰</strong>
+                    <span>
+                      초기 쇼핑몰 구축 및 교육 지원이<br />
+                      필요하다면 지원 서비스를 통해<br />
+                      쉽고 빠르게 구축해보세요.
+                    </span>
+                  </span>
+                </a>
+                <div class="icon-b">
+                  <img
+                    src="https://www.makeshop.co.kr/newmakeshop/home/img/main/sec02_icon1_3.png"
+                    alt="쇼핑몰제작의뢰 아이콘"
+                    class="icon n1"
+                  />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 322.08 173.9"
+                    class="svg-arrow"
+                  >
+                    <path
+                      class="st1"
+                      d="M57.48,83.4h187c0,0,22.9-1.08,22.9,10.92"
+                    ></path>
+                    <polygon
+                      class="st0"
+                      points="267.02,91.81 270.91,91.81 268.97,95.18 267.02,98.55 265.08,95.18 263.13,91.81 "
+                    ></polygon>
+                  </svg>
+                </div>
+              </li>
+              <li class="swiper-slide service-item n3">
+                <a href="">
+                  <span class="img-b">
+                    <img
+                      src="https://www.makeshop.co.kr/newmakeshop/home/img/main/sec02_icon2.png"
+                      alt="콘텐츠사진"
+                    />
+                  </span>
+                  <span class="txt-area">
+                    <strong>기업 맞춤 제작</strong>
+                    <span>
+                      기업 맞춤형 쇼핑몰 구축이<br />
+                      필요하다면 기업 특성에 맞춰<br />
+                      시스템 개발이 가능해요.
+                    </span>
+                  </span>
+                </a>
+              </li>
+              <li class="swiper-slide service-item n4">
+                <a href="">
+                  <span class="img-b">
+                    <img
+                      src="https://www.makeshop.co.kr/newmakeshop/home/img/main/sec02_icon3.png"
+                      alt="콘텐츠사진"
+                    />
+                  </span>
+                  <span class="txt-area">
+                    <strong>브랜드 기업</strong>
+                    <span>
+                      브랜드, 기업의 이커머스 진출을<br />
+                      원하신다면 메이크샵을 통해<br />
+                      쇼핑몰을 시작해보세요.
+                    </span>
+                  </span>
+                </a>
+              </li>
+              <li class="swiper-slide service-item n5">
+                <a href="">
+                  <span class="img-b">
+                    <img
+                      src="https://www.makeshop.co.kr/newmakeshop/home/img/main/sec02_icon4.png"
+                      alt="콘텐츠사진"
+                    />
+                  </span>
+                  <span class="txt-area">
+                    <strong>쇼핑몰 이전</strong>
+                    <span>
+                      기존 쇼핑몰이 있는데 메이크샵을<br />
+                      이용하고 싶으시다면 데이터와<br />
+                      디자인을 완벽하게 이전해드려요.
+                    </span>
+                  </span>
+                </a>
+              </li>
+              <li class="swiper-slide service-item n6">
+                <a class="pc-link" href="">
+                  <span class="img-b">
+                    <img
+                      src="https://www.makeshop.co.kr/newmakeshop/home/img/main/sec02_icon5.png"
+                      alt="콘텐츠사진"
+                    />
+                  </span>
+                  <span class="txt-area">
+                    <strong>광고센터</strong>
+                    <span>
+                      쇼핑몰 광고가 필요하시다면<br />
+                      체계적인 광고 서비스를 통해<br />
+                      쇼핑몰을 성장시켜드려요.
+                    </span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="sub-group">
+          <div class="inner">
+            <h3>
+              나만의 쇼핑몰 메이크샵,<br class="mo" />
+              지금 바로 체험해보세요!
+            </h3>
+            <p>쇼핑몰 만들기, 메이크샵과 함께 하면 어렵지 않아요.</p>
+            <div class="btn-area">
+              <a href="" class="btn"
+                ><span class="txt">쇼핑몰 체험하기</span>
+                <span class="icon"></span
+              ></a>
+              <a href="" class="btn"
+                ><span class="txt">관리자 체험하기</span>
+                <span class="icon"></span
+              ></a>
+            </div>
+            <img
+              src="https://www.makeshop.co.kr/newmakeshop/home/img/main/sec02_bg_mo.png"
+              alt="사람이미지"
+              class="main-img"
+            />
+          </div>
+          <div class="img-b">
+            <img
+              src="https://www.makeshop.co.kr/newmakeshop/home/img/main/sec02_bg_mo.png"
+              alt="사람이미지"
+              class="main-img mo"
+            />
+            <img
+              src="https://www.makeshop.co.kr/newmakeshop/home/img/main/icon_figure1.png"
+              alt="아이콘"
+              class="icon n1"
+            />
+            <img
+              src="https://www.makeshop.co.kr/newmakeshop/home/img/main/icon_figure2.png"
+              alt="아이콘"
+              class="icon n2"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="sc-shopping section">
+        <div class="inner">
+          <h2 class="tit">
+            5단계로 끝내는<br class="mo" />
+            쇼핑몰 제작
+            <p class="sub-tit">
+              제작부터 판매까지,<br class="mo" />
+              메이크샵은 당신만을 위한 서비스를 제공합니다.
+            </p>
+          </h2>
+          <div class="cont-group">
+            <div class="list-area">
+              <div class="list-wrap">
+                <div class="tab-effect-box">
+                  <div class="tab-effect"></div>
+                </div>
+                <ul class="service-list">
+                  <li class="tab-item on">알아보기</li>
+                  <li class="tab-item">준비하기</li>
+                  <li class="tab-item">판매하기</li>
+                  <li class="tab-item">운영하기</li>
+                  <li class="tab-item">홍보하기</li>
+                </ul>
+              </div>
+            </div>
+            <div class="service-area">
+              <div class="step-desc n1 on">
+                <div class="full-bg"></div>
+                <div class="col-left">
+                  <span>STEP 01</span>
+                  <h3>알아보기</h3>
+                  <p>
+                    초기 쇼핑몰 구축 및 교육 지원이 필요하신가요?<br />
+                    메이크샵에서 제공하는 서비스를 알아보세요.
+                  </p>
+                </div>
+                <div class="col-right">
+                  <ul class="list-step">
+                    <li class="step n1">
+                      <a href="">
+                        <span class="img-b n1">
+                          <img
+                            src="https://www.makeshop.co.kr/newmakeshop/home/img/main/sec03_step1_icon1.png"
+                            alt="준비하기 아이콘"
+                            class="pos-c"
+                          />
+                        </span>
+                        <span>내게 맞는 서비스</span>
+                        <img
+                          src="https://www.makeshop.co.kr/newmakeshop/home/img/common/icon_right_arrow.png"
+                          alt="오른쪽 화살표"
+                          class="arrow-i"
+                        />
+                      </a>
+                    </li>
+                    <li class="step n2">
+                      <a href="">
+                        <span class="img-b n2">
+                          <img
+                            src="https://www.makeshop.co.kr/newmakeshop/home/img/main/sec03_step1_icon2.png"
+                            alt="준비하기 아이콘"
+                            class="pos-c"
+                          />
+                        </span>
+                        <span>구독안내</span>
+                        <img
+                          src="https://www.makeshop.co.kr/newmakeshop/home/img/common/icon_right_arrow.png"
+                          alt="오른쪽 화살표"
+                          class="arrow-i"
+                        />
+                      </a>
+                    </li>
+                    <li class="step n3">
+                      <a href="">
+                        <span class="img-b n3">
+                          <img
+                            src="https://www.makeshop.co.kr/newmakeshop/home/img/main/sec03_step1_icon3.png"
+                            alt="준비하기 아이콘"
+                            class="pos-c"
+                          />
+                        </span>
+                        <span>업종별 추천기능</span>
+                        <img
+                          src="https://www.makeshop.co.kr/newmakeshop/home/img/common/icon_right_arrow.png"
+                          alt="오른쪽 화살표"
+                          class="arrow-i"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="step-desc n2 wid">
+                <div class="full-bg"></div>
+                <div class="col-left">
+                  <span>STEP 02</span>
+                  <h3>준비하기</h3>
+                  <p>쇼핑몰을 준비하려면 어떤 과정이 필요할까요?</p>
+                </div>
+                <div class="col-right">
+                  <ul class="list-step">
+                    <li class="step n1">
+                      <a href="">
+                        <span class="img-b n1">
+                          <img
+                            src="https://www.makeshop.co.kr/newmakeshop/home/img/main/sec03_step2_icon1.png"
+                            alt="준비하기 아이콘"
+                            class="pos-c"
+                          />
+                        </span>
+                        <span>준비과정</span>
+                        <img
+                          src="https://www.makeshop.co.kr/newmakeshop/home/img/common/icon_right_arrow.png"
+                          alt="오른쪽 화살표"
+                          class="arrow-i"
+                        />
+                      </a>
+                    </li>
+                    <li class="step n2">
+                      <a href="">
+                        <span class="img-b n2">
+                          <img
+                            src="	https://www.makeshop.co.kr/newmakeshop/home/img/main/sec03_step2_icon2.png"
+                            alt="준비하기 아이콘"
+                            class="pos-c"
+                          />
+                        </span>
+                        <span>쇼핑몰 창업 준비</span>
+                        <img
+                          src="https://www.makeshop.co.kr/newmakeshop/home/img/common/icon_right_arrow.png"
+                          alt="오른쪽 화살표"
+                          class="arrow-i"
+                        />
+                      </a>
+                    </li>
+                    <li class="step n3">
+                      <a href="">
+                        <span class="img-b n3">
+                          <img
+                            src="https://www.makeshop.co.kr/newmakeshop/home/img/main/sec03_step2_icon3.png"
+                            alt="준비하기 아이콘"
+                            class="pos-c"
+                          />
+                        </span>
+                        <span>쇼핑몰 디자인</span>
+                        <img
+                          src="https://www.makeshop.co.kr/newmakeshop/home/img/common/icon_right_arrow.png"
+                          alt="오른쪽 화살표"
+                          class="arrow-i"
+                        />
+                      </a>
+                    </li>
+                    <li class="step n4">
+                      <a href="">
+                        <span class="img-b n4">
+                          <img
+                            src="https://www.makeshop.co.kr/newmakeshop/home/img/main/sec03_step2_icon4.png"
+                            alt="준비하기 아이콘"
+                            class="pos-c"
+                          />
+                        </span>
+                        <span>결제 서비스</span>
+                        <img
+                          src="https://www.makeshop.co.kr/newmakeshop/home/img/common/icon_right_arrow.png"
+                          alt="오른쪽 화살표"
+                          class="arrow-i"
+                        />
+                      </a>
+                    </li>
+                    <li class="step n5">
+                      <a href="">
+                        <span class="img-b n5">
+                          <img
+                            src="https://www.makeshop.co.kr/newmakeshop/home/img/main/sec03_step2_icon5.png"
+                            alt="준비하기 아이콘"
+                            class="pos-c"
+                          />
+                        </span>
+                        <span>배송관리</span>
+                        <img
+                          src="https://www.makeshop.co.kr/newmakeshop/home/img/common/icon_right_arrow.png"
+                          alt="오른쪽 화살표"
+                          class="arrow-i"
+                        />
+                      </a>
+                    </li>
+                    <li class="step n6">
+                      <a href="">
+                        <span class="img-b n6">
+                          <img
+                            src="https://www.makeshop.co.kr/newmakeshop/home/img/main/sec03_step2_icon6.png"
+                            alt="준비하기 아이콘"
+                            class="pos-c"
+                          />
+                        </span>
+                        <span>상품등록/진열</span>
+                        <img
+                          src="https://www.makeshop.co.kr/newmakeshop/home/img/common/icon_right_arrow.png"
+                          alt="오른쪽 화살표"
+                          class="arrow-i"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="step-desc n3">
+                <div class="full-bg"></div>
+                <div class="col-left">
+                  <span>STEP 03</span>
+                  <h3>판매하기</h3>
+                  <p>
+                    쇼핑몰이 준비되었으면, 판매 채널을 확장해야겠죠?<br />
+                    다양한 서비스를 통해 상품을 판매하여 매출을 올릴 수 있어요!
+                  </p>
+                </div>
+                <div class="col-right">
+                  <ul class="list-step">
+                    <li class="step n1">
+                      <a href="">
+                        <span class="img-b n1">
+                          <img
+                            src="https://www.makeshop.co.kr/newmakeshop/home/img/main/sec03_step3_icon1.png"
+                            alt="준비하기 아이콘"
+                            class="pos-c"
+                          />
+                        </span>
+                        <span>상품판매</span>
+                        <img
+                          src="https://www.makeshop.co.kr/newmakeshop/home/img/common/icon_right_arrow.png"
+                          alt="오른쪽 화살표"
+                          class="arrow-i"
+                        />
+                      </a>
+                    </li>
+                    <li class="step n2">
+                      <a href="">
+                        <span class="img-b n2">
+                          <img
+                            src="https://www.makeshop.co.kr/newmakeshop/home/img/main/sec03_step3_icon2.png"
+                            alt="준비하기 아이콘"
+                            class="pos-c"
+                          />
+                        </span>
+                        <span>자사몰 판매 강화</span>
+                        <img
+                          src="https://www.makeshop.co.kr/newmakeshop/home/img/common/icon_right_arrow.png"
+                          alt="오른쪽 화살표"
+                          class="arrow-i"
+                        />
+                      </a>
+                    </li>
+                    <li class="step n3">
+                      <a href="">
+                        <span class="img-b n3">
+                          <img
+                            src="https://www.makeshop.co.kr/newmakeshop/home/img/main/sec03_step3_icon3.png"
+                            alt="준비하기 아이콘"
+                            class="pos-c"
+                          />
+                        </span>
+                        <span>판매 채널 확장</span>
+                        <img
+                          src="https://www.makeshop.co.kr/newmakeshop/home/img/common/icon_right_arrow.png"
+                          alt="오른쪽 화살표"
+                          class="arrow-i"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="step-desc n4 wid">
+                <div class="full-bg"></div>
+                <div class="col-left">
+                  <span>STEP 04</span>
+                  <h3>운영하기</h3>
+                  <p>
+                    쇼핑몰 운영에 필요한 관리들을 메이크샵이<br />
+                    편리하게 운영하실 수 있도록 도와드릴게요.
+                  </p>
+                </div>
+                <div class="col-right">
+                  <ul class="list-step">
+                    <li class="step n1">
+                      <a href="">
+                        <span class="img-b n1">
+                          <img
+                            src="https://www.makeshop.co.kr/newmakeshop/home/img/main/sec03_step4_icon1.png"
+                            alt="준비하기 아이콘"
+                            class="pos-c"
+                          />
+                        </span>
+                        <span>쇼핑몰 운영</span>
+                        <img
+                          src="https://www.makeshop.co.kr/newmakeshop/home/img/common/icon_right_arrow.png"
+                          alt="오른쪽 화살표"
+                          class="arrow-i"
+                        />
+                      </a>
+                    </li>
+                    <li class="step n2">
+                      <a href="">
+                        <span class="img-b n2">
+                          <img
+                            src="https://www.makeshop.co.kr/newmakeshop/home/img/main/sec03_step4_icon2.png"
+                            alt="준비하기 아이콘"
+                            class="pos-c"
+                          />
+                        </span>
+                        <span>주문관리</span>
+                        <img
+                          src="https://www.makeshop.co.kr/newmakeshop/home/img/common/icon_right_arrow.png"
+                          alt="오른쪽 화살표"
+                          class="arrow-i"
+                        />
+                      </a>
+                    </li>
+                    <li class="step n3">
+                      <a href="">
+                        <span class="img-b n3">
+                          <img
+                            src="https://www.makeshop.co.kr/newmakeshop/home/img/main/sec03_step4_icon3.png"
+                            alt="준비하기 아이콘"
+                            class="pos-c"
+                          />
+                        </span>
+                        <span>회원관리</span>
+                        <img
+                          src="https://www.makeshop.co.kr/newmakeshop/home/img/common/icon_right_arrow.png"
+                          alt="오른쪽 화살표"
+                          class="arrow-i"
+                        />
+                      </a>
+                    </li>
+                    <li class="step n4">
+                      <a href="">
+                        <span class="img-b n4">
+                          <img
+                            src="https://www.makeshop.co.kr/newmakeshop/home/img/main/sec03_step4_icon4.png"
+                            alt="준비하기 아이콘"
+                            class="pos-c"
+                          />
+                        </span>
+                        <span>보안</span>
+                        <img
+                          src="https://www.makeshop.co.kr/newmakeshop/home/img/common/icon_right_arrow.png"
+                          alt="오른쪽 화살표"
+                          class="arrow-i"
+                        />
+                      </a>
+                    </li>
+                    <li class="step n5">
+                      <a href="">
+                        <span class="img-b n5">
+                          <img
+                            src="https://www.makeshop.co.kr/newmakeshop/home/img/main/sec03_step4_icon5.png"
+                            alt="준비하기 아이콘"
+                            class="pos-c"
+                          />
+                        </span>
+                        <span>통계분석</span>
+                        <img
+                          src="https://www.makeshop.co.kr/newmakeshop/home/img/common/icon_right_arrow.png"
+                          alt="오른쪽 화살표"
+                          class="arrow-i"
+                        />
+                      </a>
+                    </li>
+                    <li class="step n6">
+                      <a href="">
+                        <span class="img-b n6">
+                          <img
+                            src="https://www.makeshop.co.kr/newmakeshop/home/img/main/sec03_step4_icon6.png"
+                            alt="준비하기 아이콘"
+                            class="pos-c"
+                          />
+                        </span>
+                        <span>이벤트/프로모션</span>
+                        <img
+                          src="https://www.makeshop.co.kr/newmakeshop/home/img/common/icon_right_arrow.png"
+                          alt="오른쪽 화살표"
+                          class="arrow-i"
+                        />
+                      </a>
+                    </li>
+                    <li class="step n7">
+                      <a href="">
+                        <span class="img-b n7">
+                          <img
+                            src="https://www.makeshop.co.kr/newmakeshop/home/img/main/sec03_step4_icon7.png"
+                            alt="준비하기 아이콘"
+                            class="pos-c"
+                          />
+                        </span>
+                        <span>상품리뷰</span>
+                        <img
+                          src="https://www.makeshop.co.kr/newmakeshop/home/img/common/icon_right_arrow.png"
+                          alt="오른쪽 화살표"
+                          class="arrow-i"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="step-desc n5">
+                <div class="full-bg"></div>
+                <div class="col-left">
+                  <span>STEP 05</span>
+                  <h3>홍보하기</h3>
+                  <p>
+                    쇼핑몰 홍보를 하고 싶은데 어떻게 시작하실지 막막하신가요?<br />
+                    메이크샵 광고센터를 통해 진행해보세요!
+                  </p>
+                </div>
+                <div class="col-right">
+                  <ul class="list-step">
+                    <li class="step n1">
+                      <a href="">
+                        <span class="img-b n1">
+                          <img
+                            src="https://www.makeshop.co.kr/newmakeshop/home/img/main/sec03_step5_icon1.png"
+                            alt="준비하기 아이콘"
+                            class="pos-c"
+                          />
+                        </span>
+                        <span>쇼핑몰 마케팅</span>
+                        <img
+                          src="https://www.makeshop.co.kr/newmakeshop/home/img/common/icon_right_arrow.png"
+                          alt="오른쪽 화살표"
+                          class="arrow-i"
+                        />
+                      </a>
+                    </li>
+                    <li class="step n2">
+                      <a href="">
+                        <span class="img-b n2">
+                          <img
+                            src="https://www.makeshop.co.kr/newmakeshop/home/img/main/sec03_step5_icon2.png"
+                            alt="준비하기 아이콘"
+                            class="pos-c"
+                          />
+                        </span>
+                        <span>광고센터</span>
+                        <img
+                          src="https://www.makeshop.co.kr/newmakeshop/home/img/common/icon_right_arrow.png"
+                          alt="오른쪽 화살표"
+                          class="arrow-i"
+                        />
+                      </a>
+                    </li>
+                    <li class="step n3">
+                      <a href="">
+                        <span class="img-b n3">
+                          <img
+                            src="https://www.makeshop.co.kr/newmakeshop/home/img/main/sec03_step5_icon3.png"
+                            alt="준비하기 아이콘"
+                            class="pos-c"
+                          />
+                        </span>
+                        <span>컨설팅</span>
+                        <img
+                          src="https://www.makeshop.co.kr/newmakeshop/home/img/common/icon_right_arrow.png"
+                          alt="오른쪽 화살표"
+                          class="arrow-i"
+                        />
+                      </a>
+                    </li>
+                    <li class="step n4">
+                      <a href="">
+                        <span class="img-b n4">
+                          <img
+                            src="https://www.makeshop.co.kr/newmakeshop/home/img/main/sec03_step5_icon4.png"
+                            alt="준비하기 아이콘"
+                            class="pos-c"
+                          />
+                        </span>
+                        <span>검색 엔진 최적화<br />(SEO)</span>
+                        <img
+                          src="https://www.makeshop.co.kr/newmakeshop/home/img/common/icon_right_arrow.png"
+                          alt="오른쪽 화살표"
+                          class="arrow-i"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="icon-bg">
+                <img
+                  src="https://www.makeshop.co.kr/newmakeshop/home/img/main/sec04_icon1.png"
+                  alt="배경아이콘"
+                  class="icon n1"
+                />
+                <img
+                  src="	https://www.makeshop.co.kr/newmakeshop/home/img/main/sec04_icon2.png"
+                  alt="배경아이콘"
+                  class="icon n2"
+                />
+                <img
+                  src="https://www.makeshop.co.kr/newmakeshop/home/img/main/sec04_icon3.png"
+                  alt="배경아이콘"
+                  class="icon n3"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sc-makeshop section">
+        <div class="inner">
+          <h2 class="tit">
+            메이크샵과<br class="mo" />
+            함께하는 쇼핑몰
+            <p class="sub-tit">
+              메이크샵을 이용하는 다양한 쇼핑몰을 살펴보고,<br class="mo" />
+              함께 성장해보세요!
+            </p>
+          </h2>
+        </div>
+        <div class="banner-group">
+          <div class="marquee-area">
+            <div class="loop-banner top">
+              <ul>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/0764921648050807afd65cab947bbe06.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/3ea8350093cb96d11ff06c07acc4dbbd.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/18b6e78e1ba6b13df102f3ac6d0dd535.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/4d1aac661bf632c364370578d7dd2df0.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/af6771cceb203d8743450f933d4f78de.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/b53c3d5a7e8fe992ab0ac4940b20365f.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/adf970968322853d38841e9744c8b42c.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/a15f06173995587ec6317530675dab33.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/f9797fa371f8bb8796b3d951e37b2867.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/4e7c3d57eab0ef0f8b4acc5729f82380.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/ad2bf39e3dc5fd5bb247ee0d1c52d229.png"
+                      alt="로고"
+                  /></a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/0764921648050807afd65cab947bbe06.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/3ea8350093cb96d11ff06c07acc4dbbd.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/18b6e78e1ba6b13df102f3ac6d0dd535.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/4d1aac661bf632c364370578d7dd2df0.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/af6771cceb203d8743450f933d4f78de.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/b53c3d5a7e8fe992ab0ac4940b20365f.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/adf970968322853d38841e9744c8b42c.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/a15f06173995587ec6317530675dab33.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/f9797fa371f8bb8796b3d951e37b2867.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/4e7c3d57eab0ef0f8b4acc5729f82380.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/ad2bf39e3dc5fd5bb247ee0d1c52d229.png"
+                      alt="로고"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="marquee-area">
+            <div class="loop-banner bottom">
+              <ul>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/ece22d384109bbcd60b355e084372b5f.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/145ca636b8fd82a7c83c5d263e93fd24.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/b9a7d2ef43ec888aa9191572a0c3fca3.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/73d670ac902a42e75a67cb96d19ae870.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/c42110236719b2382872949fa75cdd18.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/8cf2cb993ae797e04b7dab9bcb70e389.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/549209e450034bc97134e45963cbb38d.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/46b998f9deea88ba9efad2a204b1324d.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/f08e10bba469ff85127ebf37ffde99a8.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/eae935b1db3a8ab30faa3dd1c7a00859.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/0ebfe569909ab11c4bd30939f5c09c5a.png"
+                      alt="로고"
+                  /></a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/ece22d384109bbcd60b355e084372b5f.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/145ca636b8fd82a7c83c5d263e93fd24.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/b9a7d2ef43ec888aa9191572a0c3fca3.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/73d670ac902a42e75a67cb96d19ae870.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/c42110236719b2382872949fa75cdd18.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/8cf2cb993ae797e04b7dab9bcb70e389.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/549209e450034bc97134e45963cbb38d.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/46b998f9deea88ba9efad2a204b1324d.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/f08e10bba469ff85127ebf37ffde99a8.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/eae935b1db3a8ab30faa3dd1c7a00859.png"
+                      alt="로고"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://img.makeshop.co.kr/4/2252/202305/0ebfe569909ab11c4bd30939f5c09c5a.png"
+                      alt="로고"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sc-shortcut section">
+        <div class="inner">
+          <div class="col-left">
+            <div class="cs-group">
+              <h3>
+                We Make, SHOP<br class="mo" />
+                <span class="square-box">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </h3>
+              <h4>메이크샵에 대해 궁금하신 사항이 있으신가요?</h4>
+              <div class="cs-area">
+                <p class="cs-tit">CS Center</p>
+                <p class="call-num">02-2026-2300</p>
+                <p class="center-time">
+                  평일 9:30 ~ 17:00 (주말 및 공휴일 휴무)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-right">
+            <div class="info-desc n1">
+              <form name="search-form" method="GET">
+                <div class="search-group">
+                  <input
+                    type="search"
+                    name="keyword"
+                    placeholder="쇼핑몰 이전, 요금 안내, 교육 지원, 네임서버"
+                    autocomplete="off"
+                  />
+                  <button type="button" class="search-btn">
+                    <img
+                      src="https://www.makeshop.co.kr/newmakeshop/home/img/main/icon_search.png"
+                      alt="찾기 아이콘"
+                    />
+                  </button>
+                </div>
+              </form>
+              <h4>통합 검색</h4>
+              <p>
+                필요한 정보가 있으신가요?<br />
+                키워드 검색으로 원하는 정보를 빠르게 찾아보세요.
+              </p>
+            </div>
+            <div class="info-group">
+              <div class="col-left">
+                <div class="info-desc n2">
+                  <a href="">
+                    <span class="ico">
+                      <img
+                        src="	https://www.makeshop.co.kr/newmakeshop/home/img/main/icon_customer.png"
+                        alt="고객센터 아이콘"
+                      />
+                    </span>
+                    <span>고객센터</span>
+                  </a>
+                </div>
+                <div class="info-desc n3">
+                  <a href="">
+                    <span class="ico">
+                      <img
+                        src="	https://www.makeshop.co.kr/newmakeshop/home/img/main/icon_payment.png"
+                        alt="서비스 결제 아이콘"
+                      />
+                    </span>
+                    <span>서비스 결제</span>
+                  </a>
+                </div>
+              </div>
+              <div class="info-desc n4">
+                <a href="">
+                  <span class="ico">
+                    <img
+                      src="https://www.makeshop.co.kr/newmakeshop/home/img/main/icon_mysoho.png"
+                      alt="마이소호 고객센터 아이콘"
+                    />
+                  </span>
+                  <span>메이크샵 프리<br />by 마이소호 고객센터</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="notice-group">
+        <div class="swiper">
+          <ul class="notice-list swiper-wrapper">
+            <li class="swiper-slide">
+              <span class="cate-tag">공지사항</span>
+              <p class="tit">2023년 개인정보 처리 실태 모니터링 관련</p>
+              <span class="date">2023.11.16</span>
+            </li>
+            <li class="swiper-slide">
+              <span class="cate-tag">공지사항</span>
+              <p class="tit">메이크샵 쇼핑몰 ★무료★ 언론홍보 해드립니다</p>
+              <span class="date">2023.11.16</span>
+            </li>
+            <li class="swiper-slide">
+              <span class="cate-tag">공지사항</span>
+              <p class="tit">메이크샵 개인정보처리방침 변경 안내</p>
+              <span class="date">2023.11.16</span>
+            </li>
+            <li class="swiper-slide">
+              <span class="cate-tag">공지사항</span>
+              <p class="tit">
+                [하나카드]시스템 고도화 작업에 따라 모바일 온/오프라인
+                결제(간편결제 포함) 중단 관련 안내(2023.11 .18(토))
+              </p>
+              <span class="date">2023.11.16</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-group">
+        <div class="inner">
+          <div class="con-group">
+            <ul class="menu-list">
+              <li class="menu-item">
+                <h4><a href="">알아보기</a></h4>
+                <ul class="sub-list">
+                  <li><a href="">내게 맞는 서비스</a></li>
+                  <li><a href="">구독안내</a></li>
+                  <li><a href="">업종별 추천기능</a></li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <h4><a href="">준비하기</a></h4>
+                <ul class="sub-list">
+                  <li><a href="">준비과정</a></li>
+                  <li><a href="">쇼핑몰 창업준비</a></li>
+                  <li><a href="">쇼핑몰 디자인</a></li>
+                  <li><a href="">결제서비스</a></li>
+                  <li><a href="">배송관리</a></li>
+                  <li><a href="">상품 등록/진열</a></li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <h4><a href="">판매하기</a></h4>
+                <ul class="sub-list">
+                  <li><a href="">상품판매</a></li>
+                  <li><a href="">자사몰 판매 강화</a></li>
+                  <li><a href="">판매 채널 확장</a></li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <h4><a href="">운영하기</a></h4>
+                <ul class="sub-list">
+                  <li><a href="">쇼핑몰 운영</a></li>
+                  <li><a href="">주문관리</a></li>
+                  <li><a href="">회원관리</a></li>
+                  <li><a href="">보안</a></li>
+                  <li><a href="">통계분석</a></li>
+                  <li><a href="">이벤트/프로모션</a></li>
+                  <li><a href="">상품리뷰</a></li>
+                </ul>
+              </li>
+              <li class="menu-item promo">
+                <h4><a href="">홍보하기</a></h4>
+                <ul class="sub-list">
+                  <li><a href="">쇼핑몰 마케팅</a></li>
+                  <li><a href="">광고센터</a></li>
+                  <li><a href="">컨설팅</a></li>
+                  <li><a href="">검색 엔진 최적화(SEO)</a></li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <h4><a href="">메이크업스토어</a></h4>
+                <ul class="sub-list">
+                  <li><a href="">메이크샵스토어</a></li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <h4><a href="">고객지원</a></h4>
+                <ul class="sub-list">
+                  <li><a href="">고객게시판</a></li>
+                  <li><a href="">알림게시판</a></li>
+                  <li><a href="">제휴문의</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="company-info mo">
+              <h3>(주)커넥트웨이브</h3>
+              <div class="info-desc">
+                <p>대표 : 이건수 개인정보 보호책임자 : 김상혁</p>
+                <p>주소 : 서울특별시 양천구 목동동로 233-1, 5층 501호</p>
+                <p>사업자번호 : 117-81-40065</p>
+                <p>통신판매 신고번호 : 제2004-서울양천-00918호</p>
+                <p>호스팅제공자 : (주)커넥트웨이브</p>
+              </div>
+            </div>
+            <div class="family-site">
+              <button type="button" class="select-button">Family site</button>
+              <ul class="select-list">
+                <li><a href="">커넥트 웨이브</a></li>
+                <li><a href="">다나와</a></li>
+                <li><a href="">에누리</a></li>
+                <li><a href="">몰테일</a></li>
+                <li><a href="">플레이오토</a></li>
+                <li><a href="">마이소호</a></li>
+                <li><a href="">메이크글로벌</a></li>
+                <li><a href="">싼도메인</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="info-group">
+            <ul class="sns-list">
+              <li>
+                <a href=""
+                  ><img
+                    src="https://www.makeshop.co.kr/newmakeshop/home/img/common/icon_sns_facebook.png"
+                    alt="sns 페이스북"
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    src="https://www.makeshop.co.kr/newmakeshop/home/img/common/icon_sns_insta.png"
+                    alt="sns 인스타그램"
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    src="https://www.makeshop.co.kr/newmakeshop/home/img/common/icon_sns_blog.png"
+                    alt="sns 블로그"
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    src="https://www.makeshop.co.kr/newmakeshop/home/img/common/icon_sns_youtube.png"
+                    alt="sns 유튜브"
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    src="https://www.makeshop.co.kr/newmakeshop/home/img/common/icon_sns_naver.png"
+                    alt="sns 네이버"
+                /></a>
+              </li>
+            </ul>
+            <div class="info-desc">
+              <p class="copy">Copyright(C) MakeShop. All Rights Reserved</p>
+              <div class="info-list">
+                <div class="link1">
+                  <a href="">이용약관</a>
+                  <a href="">통합회원약관</a>
+                </div>
+                <div class="link2">
+                  <a class="privacy" href="">개인정보처리방침</a>
+                  <a href="">이메일 무단수집 거부</a>
+                  <a href="">제휴문의</a>
+                  <a href="">개발자센터</a>
+                </div>
+              </div>
+              <p>
+                <span>(주)커넥트웨이브 대표 : 이건수</span>
+                <span>개인정보 보호책임자 : 김상혁</span>
+                <span>
+                  주소 : 서울특별시 양천구 목동동로 233-1, 5층 501호 (목동,
+                  현대드림타워) </span
+                ><br />
+                <span>사업자번호 : 117-81-40065</span>
+                <span>통신판매 신고번호 : 제2004-서울양천-00918호</span>
+                <span>호스팅제공자 : (주)커넥트웨이브</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
